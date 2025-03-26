@@ -2,8 +2,8 @@ add_executable(intro main.cpp)
 
 target_link_libraries(
   intro
-  PRIVATE myproject::myproject_options
-          myproject::myproject_warnings)
+  PRIVATE sample_cmake_project::sample_cmake_project_options
+          sample_cmake_project::sample_cmake_project_warnings)
 
 target_link_system_libraries(
   intro

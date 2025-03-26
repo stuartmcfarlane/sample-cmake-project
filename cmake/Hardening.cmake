@@ -1,7 +1,7 @@
 include(CheckCXXCompilerFlag)
 
 macro(
-  myproject_enable_hardening
+  sample_cmake_project_enable_hardening
   target
   global
   ubsan_minimal_runtime)
