@@ -1,3 +1,5 @@
+// whitespace edit
+
 #include <array>
 #include <functional>
 #include <iostream>
@@ -313,7 +315,8 @@ void game_iteration_canvas()
 int main(int argc, const char **argv)
 {
   try {
-    CLI::App app{ fmt::format("{} version {}", sample_cmake_project::cmake::project_name, sample_cmake_project::cmake::project_version) };
+    CLI::App app{ fmt::format(
+      "{} version {}", sample_cmake_project::cmake::project_name, sample_cmake_project::cmake::project_version) };
 
     std::optional<std::string> message;
     app.add_option("-m,--message", message, "A message to print back out");
